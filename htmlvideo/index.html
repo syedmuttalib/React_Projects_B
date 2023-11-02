@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--html 5-->
+    <!-- <video src="./demo.mp4" controls="" width="720px" height="720px"></video> -->
+    <!--html 5-->
+<video ontimeupdate="demo()" id="v" controls="" width="720px" height="720px">
+    <source src="./demo.mp4"></source>
+</video>
+
+<button onclick="demo()">Click</button>
+<h1 id="result"></h1>
+<script>
+    function demo()
+    {
+      let video=document.getElementById('v')
+    //   total duration
+    //   video.duration/60
+    // parseInt(video.duration
+    // Math.floor(video.duration
+    //   alert((video.duration))
+    // let du=video.duration
+    // alert(du.toFixed(2))
+    // current duration
+    // let current_time=video.currentTime
+    // alert(current_time.toFixed(2))
+    // result
+    let c_t=parseInt(video.currentTime)
+    let duration_t=parseInt(video.duration)
+  document.getElementById("result").innerHTML=c_t.toFixed(2) +"/" + duration_t.toFixed(2)
+   
+   }
+</script>
+</body>
+</html>

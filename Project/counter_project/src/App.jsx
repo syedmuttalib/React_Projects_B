@@ -32,7 +32,7 @@ function App() {
       <h1>The value must not be zero or greater than twenty.</h1>
       <h2>Counter value: {counter}</h2>
 
-      <button onClick={addvalue}>Add value{counter}</button>
+      <button onClick={addvalue}>Add value {counter}</button>
       <br /><br />
       <button onClick={removeValue}>remove value {counter}</button>
 
